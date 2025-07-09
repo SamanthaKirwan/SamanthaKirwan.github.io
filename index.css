@@ -1,0 +1,75 @@
+
+
+@font-face {
+    font-family: "TitleFont";
+    src: url("/fonts/TuskerGrotesk-4500Medium.ttf")
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255,255,241);
+    overflow-x: hidden;
+}
+
+
+.title-parent {
+
+    display: flex;
+    height: 80vh;
+    width: 99vw;
+    left: 0;
+    top: 0;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.star {
+    position: absolute;
+    height: 0.5em;
+}
+
+.star#s1 {
+    height: 0.45em;
+    top: 0.44em;
+    left: 2.405em;
+}
+.star#s6 {
+    height: 0.4em;
+    top: 1.64em;
+    left: 0.43em;
+}
+.star#s3 {
+    height: 0.45em;
+    top:      1.6em;
+    left:     3.1em;
+
+}
+.star#s4 {
+    height: 0.5em;
+    top: 2.2em;
+    left: 1.57em;
+}
+.star#s5 {
+    height: 0.3em;
+    top: 0.085em;
+    left: -0.02em;
+}
+.star#s2 {display:none}
+
+
+ 
+.title {
+    font-size: 7em;
+    margin: 0;
+    font-family: 'TitleFont';
+    text-align: center;
+    color: rgb(123, 19, 21);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
