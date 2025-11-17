@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fef8eb;
+}
+
+.topnav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+
+</style>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fef8eb;
+}
+.hero-image {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  padding-top: 40px;
+  display: block;
+  
+}
+.hero-text h1,
+.hero-text p {
+  color: #544b53;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  cursor: pointer;
+}
+
+/* When you hover over the heading or paragraph */
+.hero-text h1:hover,
+.hero-text p:hover {
+  color: #a5cdd0; /* change this to any color you like */
+  text-decoration: underline;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #509f5d;
+  text-align: center;
+  background-color: rgba(237, 215, 215, 0.6); /* adds a soft overlay */
+  padding: 5px 20px;
+  border-radius: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+/* credit: https://ollielynas.com */
+
+.scale-image {
+  transition: all 60s ease;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.motion-image:hover {
+  animation: zoomInOut 60s infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1) translateY(-5px);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1) translateY(5px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="website.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contactme.html">Contact Me</a>
+  <a href="aboutme.html">About Me </a>
+</div>
+
+<div class="hero-image">
+  <img class="scale-image motion-image" width="1100" height="700" src="./Websiteimages/Breakfast_.jpg" alt="">
+  <div class="hero-text">
+    <a href="gallery.html">Enter the portal</a>
+    
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

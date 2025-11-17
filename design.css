@@ -1,0 +1,91 @@
+
+
+
+
+/* ===== Grid of 8 cards ===== */
+.art-design-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+  padding: 80px 0;
+  background-color: #fef8eb; /* same background */
+}
+
+/* container that holds each image card + its label */
+.card-container {
+  text-align: center;
+  width: 300px;
+}
+
+/* your existing card styling — unchanged */
+.card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 10px #c56365;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px #c56365;
+}
+
+/* ===== Text BELOW the image ===== */
+.card-label {
+  background-color: #fff0f6;  /* same as your h2 bubble color */
+  color: #2d2430;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: inline-block;
+
+  /* same drop shadow effect as h2 */
+  box-shadow: 0 4px 15px #da9192;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* optional hover effect for label */
+.card-container:hover .card-label {
+  background-color: #a5cdd0;
+  transform: scale(1.05);
+}
+
+/* ===== Responsive grid ===== */
+@media (max-width: 1000px) {
+  .art-design-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .art-design-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ===== Your existing image assignments ===== */
+.fine-art {
+  background-image: url("./Websiteimages/Screenshot\ 2025-11-14\ at\ 4.34.02\ PM.png");
+}
+
+.design {
+  background-image: url("./Websiteimages/board.png");
+}
+
+/* Add your other image paths */
+.img3 { background-image: url("./Websiteimages/board2.jpg"); }
+.img4 { background-image: url("./Websiteimages/pikofinalinfo.png"); }
+.img5 { background-image: url("./Websiteimages/book1.png"); }
+.img6 { background-image: url("./Websiteimages/book2.png"); }
+.img7 { background-image: url("./Websiteimages/book3.png"); }
+.img8 { background-image: url("./Websiteimages/book4.png"); }

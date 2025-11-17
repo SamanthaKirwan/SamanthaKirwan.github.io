@@ -1,0 +1,39 @@
+
+body {
+  margin: 0 !important;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #fbd3da;
+  justify-content: space-evenly;
+  z-index: 100;
+}
+
+.topnav a {
+    font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  color: #544b53;
+  text-align: space-evenly;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #a5cdd0;
+  color:#544b53;
+}
+
+.topnav a.active {
+  background-color: #a5cdd0;
+  color: #544b53;
+}
+
+
+a {
+  color: pink;
+}
